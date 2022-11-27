@@ -1,0 +1,180 @@
+.basic_flexbox {
+    display: flex;
+
+    /*When you resize the browser window smaller and smaller
+    ,you will notice that flex items start to move to the next line */
+    flex-wrap: wrap;
+}
+
+.flex_item {
+    background-color: green;
+    flex-grow: 1;
+    border: 3px solid black;
+}
+
+.flex_item1 {
+    background-color: red;
+    flex-grow: 2;
+    border: 3px solid black;
+}
+
+
+.basic_flexbox_changed {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.flex_item_changed {
+    background-color: green;
+    padding: 50px;
+}
+
+.flex_item_changed:nth-of-type(3) {
+    order: 1;
+}
+
+.flex_item_changed:nth-of-type(1) {
+    order: 2;
+}
+
+.flex_item_changed:nth-of-type(2) {
+    order: 3;
+}
+
+.column_flex {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    gap: 20px;
+    /* Here I only set the width of the flex container to be
+     50% so the items only stretch 50% of the screen */
+    width: 70%;
+
+}
+
+.col_item {
+    background-color: green;
+}
+
+#content {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.box {
+    flex-grow: 1;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+.box1 {
+    flex-grow: 2;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex {
+    background: #6ab6d8;
+    padding: 10px;
+    margin-bottom: 50px;
+    border: 3px solid #2e86bb;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+}
+
+.flex::after {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 100%;
+    margin-top: 10px;
+    width: 100%;
+    color: #333;
+    font-size: 12px;
+}
+
+.flex_basis_container {
+    display: flex;
+    width: 300px;
+    height: 100px;
+    border: 1px solid #c3c3c3;
+}
+
+.flex_basis_container div {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50px;
+}
+
+.flex_basis_container div:nth-of-type(2) {
+    flex-basis: 100px;
+}
+
+.justify_content_container {
+    width: 400px;
+    height: 100px;
+    border: 1px solid #c3c3c3;
+    display: flex;
+    justify-content: center;
+}
+
+.justify_content_container div {
+    width: 70px;
+    height: 70px;
+}
+
+.align_items_container {
+    width: 220px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.align_items_container div {
+    flex: 1;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.align_self_container {
+    width: 220px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    align-items: flex-start;
+}
+
+.align_self_container div {
+    flex: 1;
+}
+
+#myBlueDiv {
+    align-self: center;
+}
+
+.align_content_container {
+    width: 300px;
+    height: 100px;
+    border: 1px solid #c3c3c3;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.align_content_container div {
+    width: 70px;
+    height: 70px;
+}

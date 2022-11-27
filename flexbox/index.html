@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>CSS Flexbox Layout</title>
+</head>
+
+<body>
+    <h1>DEMO FOR FLEXBOX</h1>
+    <h2>This is a basic flexbox, and also flex-direction: row (default) flexbox</h2>
+    <div class="basic_flexbox">
+        <div class="flex_item">
+            <p>FLEX ITEM 1</p>
+        </div>
+        <div class="flex_item1">
+            <p>FLEX ITEM 2</p>
+        </div>
+        <div class="flex_item">
+            <p>FLEX ITEM 3</p>
+        </div>
+    </div>
+    <h2>What if I change their order with the order property?</h2>
+    <div class="basic_flexbox_changed">
+        <div class="flex_item_changed">
+            <p>FLEX ITEM 1</p>
+        </div>
+        <div class="flex_item_changed">
+            <p>FLEX ITEM 2</p>
+        </div>
+        <div class="flex_item_changed">
+            <p>FLEX ITEM 3</p>
+        </div>
+    </div>
+
+    <h2>FLEX: COLUMN</h2>
+    <div class="column_flex">
+        <div class="col_item">
+            <p>FLEX ITEM 1</p>
+        </div>
+        <div class="col_item">
+            <p>FLEX ITEM 2</p>
+        </div>
+        <div class="col_item">
+            <p>FLEX ITEM 3</p>
+        </div>
+    </div>
+    <h2>This is flex-grow</h2>
+    <h3>A,B,C and F are flex-grow:1 . D and E are flex-grow:2 .</h3>
+    <div id="content">
+        <div class="box" style="background-color:red;">A</div>
+        <div class="box" style="background-color:lightblue;">B</div>
+        <div class="box" style="background-color:yellow;">C</div>
+        <div class="box1" style="background-color:brown;">D</div>
+        <div class="box1" style="background-color:lightgreen;">E</div>
+        <div class="box" style="background-color:brown;">F</div>
+    </div>
+    <h2>This is flex-basis</h2>
+    <p>Set the initial length of the flex items to 50 pixels, with an exception; set the initial length of the
+        second
+        flex item to 100 pixels:</p>
+    <div class="flex_basis_container">
+        <div style="background-color:coral;">50px</div>
+        <div style="background-color:lightblue;">100px</div>
+        <div style="background-color:khaki;">50px</div>
+        <div style="background-color:pink;">50px</div>
+        <div style="background-color:lightgrey;">50px</div>
+    </div>
+    <h1>The justify-content Property</h1>
+    <p>The "justify-content: center;" aligns the flex items at the center of the container:</p>
+    <div class="justify_content_container">
+        <div style="background-color:coral;">1</div>
+        <div style="background-color:lightblue;">2</div>
+        <div style="background-color:pink;">3</div>
+    </div>
+    <h2>align-items: center</h2>
+    <p>The "align-items: center" centers the items in the cross-axis</p>
+    <div class="align_items_container">
+        <div style="background-color:coral;min-height:30px;">RED</div>
+        <div style="background-color:lightblue;min-height:50px;">BLUE</div>
+        <div style="background-color:lightgreen;min-height:190px;">Green div with more content.</div>
+    </div>
+    <h2>align-self</h2>
+    <p>The align-self property overrides the container's align-items property.</p>
+    <div class="align_self_container">
+        <div style="background-color:coral;">RED</div>
+        <div style="background-color:lightblue;" id="myBlueDiv">BLUE</div>
+        <div style="background-color:lightgreen;">Green div with more content.</div>
+    </div>
+    <h2>align-content</h2>
+    <div class="align_content_container">
+        <div style="background-color:coral;">1</div>
+        <div style="background-color:lightblue;">2</div>
+        <div style="background-color:pink;">3</div>
+    </div>
+</body>
+
+</html>
